@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include <conio.h>
+int main()
+{
+
+    int v,a;
+
+
+    printf("Digite um valor para ser multiplicado!\n");
+    scanf("%i",&v);
+
+
+    for (a=1; a<=10; ++a) {
+
+
+
+
+        printf("%i X %i = %i\n",v,a,(a*v));
+
+    }
+
+
+
+
+    return 0;
+}

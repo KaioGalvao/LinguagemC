@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int main()
+{
+    int jogador,placar1,placar2,d;
+
+    printf("\nEntre com placar:\n");
+    scanf("%i",&placar1);
+    printf("\nEntre com placar:\n");
+    scanf("%i",&placar2);
+
+    printf("Qual jogador ganhou?(1)ou(2)\n");
+    scanf("%i",&jogador);
+    do {
+        if(placar1<placar2)
+            d=placar2-placar1;
+        else if(placar1>placar2)
+            d=placar1-placar2;
+        else
+            d=0;
+
+        if(jogador==1) {
+            jogador=10+5*d;
+            printf("O jogador 1 ganhou a aposta com %i pontos",jogador);
+        } else if(jogador==2) {
+
+            jogador=10+5*d;
+            printf("O jogador 2 ganhou a aposta com %i pontos",jogador);
+
+        }
+    } while(jogador <=2);
+
+
+    return 0;
+
+}
+
+
+
+

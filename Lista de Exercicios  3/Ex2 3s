@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include <conio.h>
+
+int main()
+{
+
+    float soma;
+    
+   
+        soma=((1+100)*100)/2;
+        printf("resultado da (soma 1,2,3...100) =\n %.0f",soma);
+    
+    return 0;
+}

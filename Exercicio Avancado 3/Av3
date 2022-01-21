@@ -1,0 +1,113 @@
+#include <stdio.h>
+#include <locale.h>
+int main ()
+
+{
+    setlocale(LC_ALL,"Portuguese");
+    float media;
+    int num, i, par, impar, maior, menor, faixa[5] = {0};
+
+    printf("Quantidade de números?\n\n");
+    scanf("%i", &num);
+
+    printf("\n\nContar %i Números:\n\n", num);
+
+    int n[num];
+
+    for (i = 0; i < num; ++i) {
+
+        scanf("%i", &n[i]);
+
+        media = media + n[i];
+
+        if (i == 0) {
+
+            menor = n[i];
+            maior = n[i];
+
+        }
+
+        else if (n[i] > maior)
+
+            maior = n[i];
+
+        else if (n[i] < menor)
+
+            menor = n[i];
+
+    }
+
+    media = media / num;
+
+    printf("\n\nMaior: %i\n\nMenor: %.i\n\nMEDIA ARITMETICA: %.1f\n\n", maior, menor, media);
+
+    for (i = 0; i < num; ++i) {
+
+        if (n[i] % 2 == 0) {
+
+            printf("%i   =   par\n", n[i]);
+            ++par;
+        }
+
+        else {
+
+            printf("%i   =   impar\n", n[i]);
+            ++impar;
+
+        }
+
+    }
+
+    printf("\n\nTotal de pares: %i\n\nTotal de Ímpar: %i\n\n", par, impar);
+
+    for (i = 0; i < num; ++i) {
+
+        if (n[i] < 0 ) {
+
+            printf("%i   =   Faixa 1\n", n[i]);
+            ++faixa[0];
+
+        }
+
+        else if (n[i] >= 0 && n[i] < 15) {
+
+            printf("%i   =   Faixa 2\n", n[i]);
+            ++faixa[1];
+
+        }
+
+        else if (n[i] >= 15 && n[i] < 100) {
+
+            printf("%i   =   Faixa 3\n", n[i]);
+            ++faixa[2];
+
+        }
+
+        else if (n[i] >= 101 && n[i] < 1000) {
+
+            printf("%i   =   Faixa 4\n", n[i]);
+            ++faixa[3];
+
+        }
+
+        else {
+
+            printf("%i   =   Faixa 5\n", n[i]);
+            ++faixa[4];
+
+        }
+
+    }
+
+    printf("\n");
+
+    for (i = 0; i < 5; ++i) {
+
+        if (faixa[i] != 0)
+
+            printf("Faixa %i: %i Elementos \n", i + 1, faixa[i]);
+
+    }
+
+
+}

@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include <conio.h>
+#include <locale.h>
+
+int main() {
+    char op;
+    float a,b;
+    setlocale(LC_ALL,"Portuguese");
+    do{
+        printf("\tCALCULADORA\n(+)\n(-)\n(*)\n(/)\n(S)\nR=");
+        fflush(stdin);
+        scanf("%c",&op);
+        if(op=='s' || op=='S') {
+            printf("Fechando...");
+            exit(0);
+        }
+        switch(op) {
+        case '+':
+            printf("Digite algum número\n");
+            scanf("%f",&a);
+            printf("Digite algum número\n");
+            scanf("%f",&b);
+            printf("Resultado = %.2f\n :",(a+b));
+            break;
+        case '-':
+            printf("Digite algum número\n");
+            scanf("%f",&a);
+            printf("Digite algum número\n");
+            scanf("%f",&b);
+            printf("Resultado = %.2f\n :",(a-b));
+            break;
+        case '*':
+            printf("Digite algum número\n");
+            scanf("%f",&a);
+            printf("Digite algum número\n");
+            scanf("%f",&b);
+            printf("Resultado = %.2f\n :",(a*b));
+            break;
+        case '/':
+            printf("Digite algum número\n");
+            scanf("%f",&a);
+            printf("Digite algum número\n");
+            scanf("%f",&b);
+            printf("Resultado = %.2f\n :",(a/b));
+            break;
+        case 's':
+            printf("Fechando...");
+            exit(0);
+            break;
+        }
+    }
+   while(op!='s'||op!='S');
+    return 0;
+}

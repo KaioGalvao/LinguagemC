@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include <conio.h>
+
+
+int main() {
+    int s;
+    s=((2+500)*250)/2;
+    printf("A soma dos numeros pares entre 1 e 500 =\n%i",s);
+
+
+
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include <conio.h>
+#include <math.h>
+int main()
+{
+
+    int p,e;
+
+
+
+    for (p=0; p<=15; ++p) {
+
+
+        e=pow(3,p);
+
+        printf("3 elevado a %i = %i\n",p,e);
+
+    }
+
+
+
+
+    return 0;
+}

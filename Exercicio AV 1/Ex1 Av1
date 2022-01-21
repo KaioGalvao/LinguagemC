@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(void)
+{
+    float pressao;
+    int p;
+    printf("Entre com pressao da caldeira entre (0.00 e 9.99):\n");
+    scanf ("%i",&pressao);
+    p=pressao*100;
+    switch(p) {
+    case 0 ... 333:
+        printf("Pressao baixa!");
+        break;
+    case 334 ... 666:
+        printf("Pressao media!");
+        break;
+    case 667 ... 999:
+        printf("PERIGO!!!PRESSAO ALTA!!!");
+        break;
+    default:
+        printf("Essa pressao nao existe.");
+    }
+
+    return 0;
+}

@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <locale.h>
+
+int main ()
+{
+    setlocale(LC_ALL,"Portuguese");
+    int i,menu;
+    float n[5], r,p,f[5],j;
+    for(i=0; i<5; i=i+1) {
+        printf("Entre com número:");
+
+        scanf("%f",&n[i]);
+    }
+
+
+    printf("\tMENU\n1-Calculo de Raiz.\n2-Calculo de Potência.\n3-Calculo de fatorial.\n");
+    scanf("%d",&menu);
+
+
+    switch (menu) {
+    case 1:
+        for(i=0; i<5; ++i) {
+            r=sqrt(n[i]);
+            printf ("Raiz de %.3f = %.3f\n", n[i], r);
+        }
+        break;
+    case 2:
+        for(i=0; i<3; ++i) {
+
+            p=pow(n[i],3);
+            printf("Potência de três de %.0f = %.0f\n",n[i],p);
+
+        }
+        break;
+    case 3:
+        for(i=0; i<5; ++i) {
+            f[i]=1;
+            for(j=n[i]; j>=1; --j) {
+
+                f[i]=f[i]*j;
+
+                printf("Fatorial %.0f = %.0f\n",n[i],f[i]);
+
+            }
+        }
+
+
+
+        break;
+    }
+
+    return 0;
+}

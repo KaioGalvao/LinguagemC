@@ -1,0 +1,181 @@
+#include<stdio.h>
+#include <conio.h>
+int main()
+{
+
+    int m;
+    int d,ano,ds,td;
+    do {
+
+
+        printf("\nEntre com o dia:\n");
+        scanf("%i",&d);
+        if(d>31 || d<1)
+            printf("\nDia invalido, tente de novo");
+
+    } while(d<1 || d>31);
+
+    do {
+        printf("\nEntre com mes em numero:\n");
+        scanf("%i",&m);
+        if(m>12 || m<1)
+            printf("\nMes invalido,tente de novo");
+
+    } while(m<1 || m>12);
+
+    do {
+        printf("\nEntre com ano:\n");
+        scanf("%i",&ano);
+        if(ano<1900 || ano>2100)
+            printf("\nAno invalido, tente de novo.");
+
+
+
+    } while(ano<1900 || ano>2100);
+
+    switch(m) {
+    case 1 :
+        ds=d;
+        printf("\n%i/%i/%i equivale ao %i°. dia do ano %i!",d,m,ano,ds,ano);
+        break;
+
+
+    case 2 :
+        ds=d+31;
+        printf("\n%i/%i/%i equivale ao %i°. dia do ano %i!",d,m,ano,ds,ano);
+        break;
+    case 3 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+
+    case 4 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+31+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+31+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    case 5 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+31+31+30;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+31+31+30;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    case 6 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+31+31+30+30;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+31+31+30+30;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    case 7 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+31+31+30+30+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+31+31+30+30+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    case 8 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+31+31+30+30+31+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+31+31+30+30+31+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    case 9 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+31+31+30+30+31+31+30;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+31+31+30+30+31+31+30;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    case 10 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+31+31+30+30+31+31+30+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+31+31+30+30+31+31+30+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    case 11 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+30+31+31+30+30+31+31+30+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+30+31+31+30+30+31+31+30+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    case 12 :
+        if((ano%4==0 && ano%100!=0)||(ano%400==0)) {
+            ds=d+29+30+31+31+31+30+30+31+31+30+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+        }
+        else
+        {
+            ds=d+28+30+31+31+31+30+30+31+31+30+31;
+            printf("\n%i/%i/%i equivale ao %i° dia do ano %i!",d,m,ano,ds,ano);
+
+        }
+
+        break;
+    }
+
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include <conio.h>
+
+int main()
+{
+
+    int i,q;
+
+    
+    for(i=15;i<=200;i++){
+    q=i*i;
+    printf("%i\n",q);}
+    
+    return 0;
+}

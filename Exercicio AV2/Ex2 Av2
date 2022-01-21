@@ -1,0 +1,182 @@
+#include<stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int i;
+    float salario[6],ns[6];
+    char nome[6][30];
+
+
+    for(i=1; i<=6; i++) {
+        printf("\nNome do funcionário:\n");
+        scanf("%s",&nome[i]);
+
+    }
+    for(i=1; i<=6; ++i)  {
+        printf("\nEscreva o salario correspondente para:\n");
+        fflush(stdin);
+        scanf("%f",&salario[i]);
+    }
+
+    if(salario[1]<=400) {
+        ns[1]=salario[1]+salario[1]*0.15;
+
+    }
+    else if(salario[1]>400 && salario[i]<=700)
+    {
+        ns[1]=salario[1]+salario[1]*0.12;
+
+    }
+    else if(salario[1]>700 && salario[1]<=1000)
+    {   ns[1]=salario[1]+salario[1]*0.1;
+
+    }
+    else if(salario[1]>1000 && salario[1]<=1800)
+    {
+        ns[1]=salario[1]+salario[1]*0.07;
+
+    }
+    else if(salario[1]>1800 && salario[1]<=2500)
+    {
+        ns[1]=salario[1]+salario[1]*0.04;
+
+    }
+    else if(salario[1]>2500) {
+        ns[1]=salario[1];
+
+    }
+    if(salario[2]<=400) {
+        ns[2]=salario[2]+salario[2]*0.15;
+
+    }
+    else if(salario[2]>400 && salario[2]<=700)
+    {
+        ns[2]=salario[2]+salario[2]*0.12;
+
+    }
+    else if(salario[2]>700 && salario[2]<=1000)
+    {   ns[2]=salario[2]+salario[2]*0.1;
+
+    }
+    else if(salario[2]>1000 && salario[2]<=1800)
+    {
+        ns[2]=salario[2]+salario[2]*0.07;
+
+    }
+    else if(salario[2]>1800 && salario[2]<=2500)
+    {
+        ns[2]=salario[2]+salario[2]*0.04;
+
+    }
+    else if(salario[2]>2500) {
+        ns[2]=salario[2];
+    }
+    if(salario[3]<=400) {
+        ns[3]=salario[3]+salario[3]*0.15;
+
+    }
+    else if(salario[3]>400 && salario[3]<=700)
+    {
+        ns[3]=salario[3]+salario[3]*0.12;
+
+    }
+    else if(salario[3]>700 && salario[3]<=1000)
+    {   ns[3]=salario[3]+salario[3]*0.1;
+
+    }
+    else if(salario[3]>1000 && salario[3]<=1800)
+    {
+        ns[3]=salario[3]+salario[3]*0.07;
+
+    }
+    else if(salario[3]>1800 && salario[3]<=2500)
+    {
+        ns[3]=salario[3]+salario[3]*0.04;
+
+    }
+    else if(salario[3]>2500) {
+        ns[3]=salario[3];
+    }
+    if(salario[i]<=400) {
+        ns[4]=salario[4]+salario[4]*0.15;
+
+    }
+    else if(salario[4]>400 && salario[4]<=700)
+    {
+        ns[4]=salario[4]+salario[4]*0.12;
+
+    }
+    else if(salario[4]>700 && salario[4]<=1000)
+    {   ns[4]=salario[4]+salario[4]*0.1;
+
+    }
+    else if(salario[4]>1000 && salario[4]<=1800)
+    {
+        ns[4]=salario[4]+salario[4]*0.07;
+
+    }
+    else if(salario[4]>1800 && salario[4]<=2500)
+    {
+        ns[4]=salario[4]+salario[4]*0.04;
+
+    }
+    else if(salario[4]>2500) {
+        ns[4]=salario[4];
+    }
+    if(salario[5]<=400) {
+        ns[5]=salario[5]+salario[5]*0.15;
+
+    }
+    else if(salario[5]>400 && salario[5]<=700)
+    {
+        ns[5]=salario[5]+salario[5]*0.12;
+
+    }
+    else if(salario[5]>700 && salario[5]<=1000)
+    {   ns[5]=salario[5]+salario[5]*0.1;
+
+    }
+    else if(salario[5]>1000 && salario[5]<=1800)
+    {
+        ns[5]=salario[5]+salario[5]*0.07;
+
+    }
+    else if(salario[5]>1800 && salario[5]<=2500)
+    {
+        ns[5]=salario[5]+salario[5]*0.04;
+
+    }
+    else if(salario[5]>2500) {
+        ns[5]=salario[5];
+    }
+
+    if(salario[6]<=400) {
+        ns[6]=salario[6]+salario[6]*0.15;
+
+    }
+    else if(salario[6]>400 && salario[6]<=700)
+    {
+        ns[6]=salario[6]+salario[6]*0.12;
+
+    }
+    else if(salario[6]>700 && salario[6]<=1000)
+    {   ns[6]=salario[6]+salario[6]*0.1;
+
+    }
+    else if(salario[6]>1000 && salario[6]<=1800)
+    {
+        ns[6]=salario[6]+salario[6]*0.07;
+
+    }
+    else if(salario[6]>1800 && salario[6]<=2500)
+    {
+        ns[6]=salario[6]+salario[6]*0.04;
+
+    }
+    else if(salario[6]>2500) {
+        ns[6]=salario[6];
+    }
+    printf("\n%s seu salario de %.2f foi atualizado para %.2f\n\n%s seu salario de %.2f foi atualizado para %.2f\n\n%s seu salario de %.2 foi atualizado para %.2f\n\n%s seu salario de %.2f foi atualizado para %.2f\n\n%s seu salario de %.2f foi atualizado para %.2f\n\n%s seu salario de %.2f foi atualizado para %.2f",nome[1],salario[1],ns[1],nome[2],salario[2],ns[2],nome[3],salario[3],ns[3],nome[4],salario[4],ns[4],nome[5],salario[5],ns[5],nome[6],salario[6],ns[6]);
+
+    return 0;
+}
